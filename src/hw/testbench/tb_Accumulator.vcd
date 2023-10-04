@@ -1,0 +1,79 @@
+$date
+	Sat Aug 26 15:15:06 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	10ps
+$end
+$scope module tb_Accumulator $end
+$var wire 32 ! result [31:0] $end
+$var reg 1 " clk $end
+$var reg 32 # pe_out [31:0] $end
+$var reg 32 $ psum_or_bias [31:0] $end
+$var reg 1 % rst $end
+$scope module accumulator $end
+$var wire 32 & pe_out [31:0] $end
+$var wire 32 ' psum_or_bias [31:0] $end
+$var wire 32 ( result [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx (
+bx '
+bx &
+x%
+bx $
+bx #
+1"
+bx !
+$end
+#500
+0"
+#1000
+1%
+1"
+#1500
+0"
+#2000
+0%
+1"
+#2500
+0"
+#3000
+1"
+b10001 !
+b10001 (
+b1001 $
+b1001 '
+b1000 #
+b1000 &
+#3500
+0"
+#4000
+1"
+b1 !
+b1 (
+b11111111111111111111111111111000 #
+b11111111111111111111111111111000 &
+#4500
+0"
+#5000
+1"
+b11111111111111111111111111110111 $
+b11111111111111111111111111110111 '
+b11111111111111111111111111111111 !
+b11111111111111111111111111111111 (
+b1000 #
+b1000 &
+#5500
+0"
+#6000
+1"
+b11111111111111111111111111101111 !
+b11111111111111111111111111101111 (
+b11111111111111111111111111111000 #
+b11111111111111111111111111111000 &
