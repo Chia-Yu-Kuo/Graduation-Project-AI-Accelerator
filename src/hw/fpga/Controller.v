@@ -39,36 +39,6 @@ module Controller (
     ifmap_pe_wen,
     weight_pe_wen,
     reg_pe_clear,
-    /*
-                  PE_Vec1_1_ifmap_wen,PE_Vec1_1_weight_wen,PE_Vec1_2_ifmap_wen,PE_Vec1_2_weight_wen,PE_Vec1_3_ifmap_wen,PE_Vec1_3_weight_wen,
-                  PE_Vec2_1_ifmap_wen,PE_Vec2_1_weight_wen,PE_Vec2_2_ifmap_wen,PE_Vec2_2_weight_wen,PE_Vec2_3_ifmap_wen,PE_Vec2_3_weight_wen,
-                  PE_Vec3_1_ifmap_wen,PE_Vec3_1_weight_wen,PE_Vec3_2_ifmap_wen,PE_Vec3_2_weight_wen,PE_Vec3_3_ifmap_wen,PE_Vec3_3_weight_wen,
-                  PE_Vec4_1_ifmap_wen,PE_Vec4_1_weight_wen,PE_Vec4_2_ifmap_wen,PE_Vec4_2_weight_wen,PE_Vec4_3_ifmap_wen,PE_Vec4_3_weight_wen,
-                  PE_Vec5_1_ifmap_wen,PE_Vec5_1_weight_wen,PE_Vec5_2_ifmap_wen,PE_Vec5_2_weight_wen,PE_Vec5_3_ifmap_wen,PE_Vec5_3_weight_wen,
-                  PE_Vec6_1_ifmap_wen,PE_Vec6_1_weight_wen,PE_Vec6_2_ifmap_wen,PE_Vec6_2_weight_wen,PE_Vec6_3_ifmap_wen,PE_Vec6_3_weight_wen,
-                  PE_Vec7_1_ifmap_wen,PE_Vec7_1_weight_wen,PE_Vec7_2_ifmap_wen,PE_Vec7_2_weight_wen,PE_Vec7_3_ifmap_wen,PE_Vec7_3_weight_wen,
-                  PE_Vec8_1_ifmap_wen,PE_Vec8_1_weight_wen,PE_Vec8_2_ifmap_wen,PE_Vec8_2_weight_wen,PE_Vec8_3_ifmap_wen,PE_Vec8_3_weight_wen,
-                  PE_Vec9_1_ifmap_wen,PE_Vec9_1_weight_wen,PE_Vec9_2_ifmap_wen,PE_Vec9_2_weight_wen,PE_Vec9_3_ifmap_wen,PE_Vec9_3_weight_wen,
-                  PE_Vec10_1_ifmap_wen,PE_Vec10_1_weight_wen,PE_Vec10_2_ifmap_wen,PE_Vec10_2_weight_wen,PE_Vec10_3_ifmap_wen,PE_Vec10_3_weight_wen,
-                  PE_Vec11_1_ifmap_wen,PE_Vec11_1_weight_wen,PE_Vec11_2_ifmap_wen,PE_Vec11_2_weight_wen,PE_Vec11_3_ifmap_wen,PE_Vec11_3_weight_wen,
-                  PE_Vec12_1_ifmap_wen,PE_Vec12_1_weight_wen,PE_Vec12_2_ifmap_wen,PE_Vec12_2_weight_wen,PE_Vec12_3_ifmap_wen,PE_Vec12_3_weight_wen,
-                  PE_Vec13_1_ifmap_wen,PE_Vec13_1_weight_wen,PE_Vec13_2_ifmap_wen,PE_Vec13_2_weight_wen,PE_Vec13_3_ifmap_wen,PE_Vec13_3_weight_wen,
-                  PE_Vec14_1_ifmap_wen,PE_Vec14_1_weight_wen,PE_Vec14_2_ifmap_wen,PE_Vec14_2_weight_wen,PE_Vec14_3_ifmap_wen,PE_Vec14_3_weight_wen,
-                  PE_Vec15_1_ifmap_wen,PE_Vec15_1_weight_wen,PE_Vec15_2_ifmap_wen,PE_Vec15_2_weight_wen,PE_Vec15_3_ifmap_wen,PE_Vec15_3_weight_wen,
-                  PE_Vec16_1_ifmap_wen,PE_Vec16_1_weight_wen,PE_Vec16_2_ifmap_wen,PE_Vec16_2_weight_wen,PE_Vec16_3_ifmap_wen,PE_Vec16_3_weight_wen,
-                  PE_Vec17_1_ifmap_wen,PE_Vec17_1_weight_wen,PE_Vec17_2_ifmap_wen,PE_Vec17_2_weight_wen,PE_Vec17_3_ifmap_wen,PE_Vec17_3_weight_wen,
-                  PE_Vec18_1_ifmap_wen,PE_Vec18_1_weight_wen,PE_Vec18_2_ifmap_wen,PE_Vec18_2_weight_wen,PE_Vec18_3_ifmap_wen,PE_Vec18_3_weight_wen,
-                  PE_Vec19_1_ifmap_wen,PE_Vec19_1_weight_wen,PE_Vec19_2_ifmap_wen,PE_Vec19_2_weight_wen,PE_Vec19_3_ifmap_wen,PE_Vec19_3_weight_wen,
-                  PE_Vec20_1_ifmap_wen,PE_Vec20_1_weight_wen,PE_Vec20_2_ifmap_wen,PE_Vec20_2_weight_wen,PE_Vec20_3_ifmap_wen,PE_Vec20_3_weight_wen,
-                  PE_Vec21_1_ifmap_wen,PE_Vec21_1_weight_wen,PE_Vec21_2_ifmap_wen,PE_Vec21_2_weight_wen,PE_Vec21_3_ifmap_wen,PE_Vec21_3_weight_wen,
-                  PE_Vec22_1_ifmap_wen,PE_Vec22_1_weight_wen,PE_Vec22_2_ifmap_wen,PE_Vec22_2_weight_wen,PE_Vec22_3_ifmap_wen,PE_Vec22_3_weight_wen,
-                  PE_Vec23_1_ifmap_wen,PE_Vec23_1_weight_wen,PE_Vec23_2_ifmap_wen,PE_Vec23_2_weight_wen,PE_Vec23_3_ifmap_wen,PE_Vec23_3_weight_wen,
-                  PE_Vec24_1_ifmap_wen,PE_Vec24_1_weight_wen,PE_Vec24_2_ifmap_wen,PE_Vec24_2_weight_wen,PE_Vec24_3_ifmap_wen,PE_Vec24_3_weight_wen,
-                  PE_Vec25_1_ifmap_wen,PE_Vec25_1_weight_wen,PE_Vec25_2_ifmap_wen,PE_Vec25_2_weight_wen,PE_Vec25_3_ifmap_wen,PE_Vec25_3_weight_wen,
-                  PE_Vec26_1_ifmap_wen,PE_Vec26_1_weight_wen,PE_Vec26_2_ifmap_wen,PE_Vec26_2_weight_wen,PE_Vec26_3_ifmap_wen,PE_Vec26_3_weight_wen,
-                  PE_Vec27_1_ifmap_wen,PE_Vec27_1_weight_wen,PE_Vec27_2_ifmap_wen,PE_Vec27_2_weight_wen,PE_Vec27_3_ifmap_wen,PE_Vec27_3_weight_wen,
-                  PE_Vec28_1_ifmap_wen,PE_Vec28_1_weight_wen,PE_Vec28_2_ifmap_wen,PE_Vec28_2_weight_wen,PE_Vec28_3_ifmap_wen,PE_Vec28_3_weight_wen,
-    */
     //other ctrl signal
     MPSF_clear,
     mux_if_sel,
@@ -112,36 +82,6 @@ module Controller (
     output [`psum_buff_wid-1:0] p_buff_r_addr;
     output reg ifmap_pe_wen, weight_pe_wen;
     output reg_pe_clear;
-    /*
-    output reg PE_Vec1_1_ifmap_wen,PE_Vec1_1_weight_wen,PE_Vec1_2_ifmap_wen,PE_Vec1_2_weight_wen,PE_Vec1_3_ifmap_wen,PE_Vec1_3_weight_wen,
-               PE_Vec2_1_ifmap_wen,PE_Vec2_1_weight_wen,PE_Vec2_2_ifmap_wen,PE_Vec2_2_weight_wen,PE_Vec2_3_ifmap_wen,PE_Vec2_3_weight_wen,
-               PE_Vec3_1_ifmap_wen,PE_Vec3_1_weight_wen,PE_Vec3_2_ifmap_wen,PE_Vec3_2_weight_wen,PE_Vec3_3_ifmap_wen,PE_Vec3_3_weight_wen,
-               PE_Vec4_1_ifmap_wen,PE_Vec4_1_weight_wen,PE_Vec4_2_ifmap_wen,PE_Vec4_2_weight_wen,PE_Vec4_3_ifmap_wen,PE_Vec4_3_weight_wen,
-               PE_Vec5_1_ifmap_wen,PE_Vec5_1_weight_wen,PE_Vec5_2_ifmap_wen,PE_Vec5_2_weight_wen,PE_Vec5_3_ifmap_wen,PE_Vec5_3_weight_wen,
-               PE_Vec6_1_ifmap_wen,PE_Vec6_1_weight_wen,PE_Vec6_2_ifmap_wen,PE_Vec6_2_weight_wen,PE_Vec6_3_ifmap_wen,PE_Vec6_3_weight_wen,
-               PE_Vec7_1_ifmap_wen,PE_Vec7_1_weight_wen,PE_Vec7_2_ifmap_wen,PE_Vec7_2_weight_wen,PE_Vec7_3_ifmap_wen,PE_Vec7_3_weight_wen,
-               PE_Vec8_1_ifmap_wen,PE_Vec8_1_weight_wen,PE_Vec8_2_ifmap_wen,PE_Vec8_2_weight_wen,PE_Vec8_3_ifmap_wen,PE_Vec8_3_weight_wen,
-               PE_Vec9_1_ifmap_wen,PE_Vec9_1_weight_wen,PE_Vec9_2_ifmap_wen,PE_Vec9_2_weight_wen,PE_Vec9_3_ifmap_wen,PE_Vec9_3_weight_wen,
-               PE_Vec10_1_ifmap_wen,PE_Vec10_1_weight_wen,PE_Vec10_2_ifmap_wen,PE_Vec10_2_weight_wen,PE_Vec10_3_ifmap_wen,PE_Vec10_3_weight_wen,
-               PE_Vec11_1_ifmap_wen,PE_Vec11_1_weight_wen,PE_Vec11_2_ifmap_wen,PE_Vec11_2_weight_wen,PE_Vec11_3_ifmap_wen,PE_Vec11_3_weight_wen,
-               PE_Vec12_1_ifmap_wen,PE_Vec12_1_weight_wen,PE_Vec12_2_ifmap_wen,PE_Vec12_2_weight_wen,PE_Vec12_3_ifmap_wen,PE_Vec12_3_weight_wen,
-               PE_Vec13_1_ifmap_wen,PE_Vec13_1_weight_wen,PE_Vec13_2_ifmap_wen,PE_Vec13_2_weight_wen,PE_Vec13_3_ifmap_wen,PE_Vec13_3_weight_wen,
-               PE_Vec14_1_ifmap_wen,PE_Vec14_1_weight_wen,PE_Vec14_2_ifmap_wen,PE_Vec14_2_weight_wen,PE_Vec14_3_ifmap_wen,PE_Vec14_3_weight_wen,
-               PE_Vec15_1_ifmap_wen,PE_Vec15_1_weight_wen,PE_Vec15_2_ifmap_wen,PE_Vec15_2_weight_wen,PE_Vec15_3_ifmap_wen,PE_Vec15_3_weight_wen,
-               PE_Vec16_1_ifmap_wen,PE_Vec16_1_weight_wen,PE_Vec16_2_ifmap_wen,PE_Vec16_2_weight_wen,PE_Vec16_3_ifmap_wen,PE_Vec16_3_weight_wen,
-               PE_Vec17_1_ifmap_wen,PE_Vec17_1_weight_wen,PE_Vec17_2_ifmap_wen,PE_Vec17_2_weight_wen,PE_Vec17_3_ifmap_wen,PE_Vec17_3_weight_wen,
-               PE_Vec18_1_ifmap_wen,PE_Vec18_1_weight_wen,PE_Vec18_2_ifmap_wen,PE_Vec18_2_weight_wen,PE_Vec18_3_ifmap_wen,PE_Vec18_3_weight_wen,
-               PE_Vec19_1_ifmap_wen,PE_Vec19_1_weight_wen,PE_Vec19_2_ifmap_wen,PE_Vec19_2_weight_wen,PE_Vec19_3_ifmap_wen,PE_Vec19_3_weight_wen,
-               PE_Vec20_1_ifmap_wen,PE_Vec20_1_weight_wen,PE_Vec20_2_ifmap_wen,PE_Vec20_2_weight_wen,PE_Vec20_3_ifmap_wen,PE_Vec20_3_weight_wen,
-               PE_Vec21_1_ifmap_wen,PE_Vec21_1_weight_wen,PE_Vec21_2_ifmap_wen,PE_Vec21_2_weight_wen,PE_Vec21_3_ifmap_wen,PE_Vec21_3_weight_wen,
-               PE_Vec22_1_ifmap_wen,PE_Vec22_1_weight_wen,PE_Vec22_2_ifmap_wen,PE_Vec22_2_weight_wen,PE_Vec22_3_ifmap_wen,PE_Vec22_3_weight_wen,
-               PE_Vec23_1_ifmap_wen,PE_Vec23_1_weight_wen,PE_Vec23_2_ifmap_wen,PE_Vec23_2_weight_wen,PE_Vec23_3_ifmap_wen,PE_Vec23_3_weight_wen,
-               PE_Vec24_1_ifmap_wen,PE_Vec24_1_weight_wen,PE_Vec24_2_ifmap_wen,PE_Vec24_2_weight_wen,PE_Vec24_3_ifmap_wen,PE_Vec24_3_weight_wen,
-               PE_Vec25_1_ifmap_wen,PE_Vec25_1_weight_wen,PE_Vec25_2_ifmap_wen,PE_Vec25_2_weight_wen,PE_Vec25_3_ifmap_wen,PE_Vec25_3_weight_wen,
-               PE_Vec26_1_ifmap_wen,PE_Vec26_1_weight_wen,PE_Vec26_2_ifmap_wen,PE_Vec26_2_weight_wen,PE_Vec26_3_ifmap_wen,PE_Vec26_3_weight_wen,
-               PE_Vec27_1_ifmap_wen,PE_Vec27_1_weight_wen,PE_Vec27_2_ifmap_wen,PE_Vec27_2_weight_wen,PE_Vec27_3_ifmap_wen,PE_Vec27_3_weight_wen,
-               PE_Vec28_1_ifmap_wen,PE_Vec28_1_weight_wen,PE_Vec28_2_ifmap_wen,PE_Vec28_2_weight_wen,PE_Vec28_3_ifmap_wen,PE_Vec28_3_weight_wen;
-    */
     output MPSF_clear;
     output reg mux_of12_sel;
     output reg [1:0] mux_if_sel, mux_pb_sel, mux_of_sel;
