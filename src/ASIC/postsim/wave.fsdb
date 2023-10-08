@@ -1,0 +1,141 @@
+$date
+    Oct  8, 2023  14:03:04
+$end
+$version
+    TOOL:	xmsim(64)	22.03-s003
+$end
+$timescale
+    10 ps
+$end
+
+$scope module tb_top $end
+$var integer  32 !    fp_r_i $end
+$var integer  32 "    fp_r_l $end
+
+$scope module top $end
+
+$scope module controller $end
+$var parameter  5 #    WAIT_START $end
+$var parameter  5 $    LD_3COL2BUFF_C1 $end
+$var parameter  5 %    MAC_C1 $end
+$var parameter  5 &    PP_STR_LD_C1 $end
+$var parameter  5 '    ONE_OFMAP_DONE_C1 $end
+$var parameter  5 (    CONV1_DONE $end
+$var parameter  5 )    READ4_MP1 $end
+$var parameter  5 *    STR_MP1 $end
+$var parameter  5 +    MP1_DONE $end
+$var parameter  5 ,    LD_3COL2BUFF_C2 $end
+$var parameter  5 -    MAC_C2 $end
+$var parameter  5 .    PP_STR_LD_C2 $end
+$var parameter  5 /    ONE_OFMAP_DONE_C2 $end
+$var parameter  5 0    CONV2_DONE $end
+$var parameter  5 1    READ4_MP2 $end
+$var parameter  5 2    STR_MP2 $end
+$var parameter  5 3    MP2_DONE $end
+$var parameter  5 4    LD_3COL2BUFF_F1 $end
+$var parameter  5 5    MAC1_F1 $end
+$var parameter  5 6    LD_3COL2BUFF_ACCU28_1 $end
+$var parameter  5 7    MAC2_F1 $end
+$var parameter  5 8    LD_3COL2BUFF_ACCU28_2 $end
+$var parameter  5 9    MAC3_F1 $end
+$var parameter  5 :    ACCU28_STR_F1 $end
+$var parameter  5 ;    FC1_DONE $end
+$var parameter  5 <    LD_3COL2BUFF_F2 $end
+$var parameter  5 =    MAC_F2 $end
+$var parameter  5 >    ACCU28_STR_F2 $end
+$var parameter  5 ?    FC2_DONE $end
+$var parameter  5 @    SF $end
+$var parameter  5 A    DONE $end
+$upscope $end
+
+$upscope $end
+
+
+$scope module im $end
+$var parameter 32 B    width $end
+$var parameter 32 C    size $end
+$var parameter 32 D    addr_wid $end
+$upscope $end
+
+
+$scope module wm $end
+$var parameter 32 E    width $end
+$var parameter 32 F    size $end
+$var parameter 32 G    addr_wid $end
+$upscope $end
+
+
+$scope module bm $end
+$var parameter 32 H    width $end
+$var parameter 32 I    size $end
+$var parameter 32 J    addr_wid $end
+$upscope $end
+
+
+$scope module of1m $end
+$var parameter 32 K    width $end
+$var parameter 32 L    size $end
+$var parameter 32 M    addr_wid $end
+$upscope $end
+
+
+$scope module of2m $end
+$var parameter 32 N    width $end
+$var parameter 32 O    size $end
+$var parameter 32 P    addr_wid $end
+$upscope $end
+
+$upscope $end
+
+$enddefinitions $end
+$dumpvars
+b1100 P
+b101111001010 O
+b100000 N
+b1101 M
+b1111010100000 L
+b100000 K
+b1000 J
+b10100010 I
+b10000 H
+b10001 G
+b10010100111001000 F
+b10000 E
+b1010 D
+b1110000100 C
+b100000 B
+b11110 A
+b11101 @
+b11100 ?
+b11011 >
+b11010 =
+b11001 <
+b11000 ;
+b10111 :
+b10110 9
+b10101 8
+b10100 7
+b10011 6
+b10010 5
+b10001 4
+b10000 3
+b1111 2
+b1110 1
+b1101 0
+b1100 /
+b1011 .
+b1010 -
+b1001 ,
+b1000 +
+b111 *
+b110 )
+b101 (
+b100 '
+b11 &
+b10 %
+b1 $
+b0 #
+b10000000000000000000000000000011 !
+b10000000000000000000000000000100 "
+$end
+#128256500
